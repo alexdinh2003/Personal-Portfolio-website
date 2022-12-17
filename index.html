@@ -1,33 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         Personal Pofolio Website
     </title>
-    <link rel = "stylesheet" href = "style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="images/logo.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-text">
-            <p>Undergraduate Computer Science</p>
-            <h1>Hi, I'm <span>Alex</span><br> From Vietnam</h1>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Undergraduate Computer Science</p>
+                <h1>Hi, I'm <span>Alex</span><br> From Vietnam</h1>
+            </div>
         </div>
     </div>
-</div>
-    
-</body>
-</html>
+    <!-- ---------------about---------------  -->
 
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <div class="tab-titles ">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Technicals skills:</span><br>Java | Python | SQL | HTML | Word | PowerPoint |
+                                Excel | CSS <br></li>
+                            <li><span>Soft skills:</span><br>Collaboration | Organization | Flexibility | Clear
+                                Communication<br></li>
+                            <li><span>Bilingual:</span><br>Vietnamese | English | Spanish<br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Personal Project:</span><br>Student Management</li>
+                            <li>====> Insert the description of the Project</li>
+                            <li><span>August 2022 - Current</span><br>Cashiers at The Home Depot<br></li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Georgia Institute of Technology (January 2023 - May 2025)</span><br>Bachelor of
+                                Science In Computer Science: Information Internetworks & Intelligence <br></li>
+                            <li><span>Georgia State University (August 2021 - December 2022)</span><br>Looked for
+                                transfering to Georgia Institute of Technology <br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------service--------------- -->
+    <div id="service">
+        <div class="container">
+            <h1c class="sub-title">My Services</h1c>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab deserunt possimus, fuga voluptates
+                        numquam totam eligendi sit vitae quia ullam corporis quisquam, distinctio expedita sequi
+                        provident nihil quae maiores eaque?</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI</h2>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab deserunt possimus, fuga voluptates
+                        numquam totam eligendi sit vitae quia ullam corporis quisquam, distinctio expedita sequi
+                        provident nihil quae maiores eaque?</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab deserunt possimus, fuga voluptates
+                        numquam totam eligendi sit vitae quia ullam corporis quisquam, distinctio expedita sequi
+                        provident nihil quae maiores eaque?</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ---------------porfolio--------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you yo the talented people around the world.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you yo the talented people around the world.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you yo the talented people around the world.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+
+</div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+
+</body>
+
+</html>
